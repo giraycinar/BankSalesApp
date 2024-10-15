@@ -1,0 +1,4 @@
+rootProject.name = 'BankSalesApp'
+include 'AuthService'
+include 'UserService'
+

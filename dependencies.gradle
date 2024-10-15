@@ -1,0 +1,31 @@
+ext{
+    /* Kullanmak istediðim baðýmlýlýklarýn versiyonlarý.
+       mapstruct-->2 nesnenin birbiri içine transferini saðlar.
+    */
+
+
+    versions = [
+            springBoot                          : '3.3.4',
+            lombok                              : '1.18.34',
+            mapstruct                           : '1.6.2',
+            openApi                             : '2.6.0'
+
+    ]
+
+    libs = [
+            sprinBootStarterWeb                 : "org.springframework.boot:spring-boot-starter-web:${versions.springBoot}",
+            sprinBootStarterDataMongo           : "org.springframework.boot:spring-boot-starter-data-mongodb:${versions.springBoot}",
+            sprinBootStarterValidation          : "org.springframework.boot:spring-boot-starter-validation:${versions.springBoot}",
+            sprinBootStarterActuator            : "org.springframework.boot:spring-boot-starter-actuator:${versions.springBoot}",
+            sprinBootStarterTest                : "org.springframework.boot:spring-boot-starter-test:${versions.springBoot}",
+            lombok                              : "org.projectlombok:lombok:${versions.lombok}",
+            mapstruct                           : "org.mapstruct:mapstruct:${versions.mapstruct}",
+            mapstructProcessor                  : "org.mapstruct:mapstruct-processor:${versions.mapstruct}",
+            openApi                             : "org.springdoc:springdoc-openapi-starter-webmvc-ui:${versions.openApi}",
+//            springBootStarterDataJpa            : "org.springframework.boot:spring-boot-starter-data-jpa:${versions.springBoot}",
+            testRuntimeOnly                     : "org.junit.platform:junit-platform-launcher"
+
+
+    ]
+
+}
